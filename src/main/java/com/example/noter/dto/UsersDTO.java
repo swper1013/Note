@@ -20,7 +20,8 @@ public class UsersDTO {
     private LocalDate createdAt;
 
     //권한여부
-    private String permission;
+    private String permission = "USER";
+
 
 
 

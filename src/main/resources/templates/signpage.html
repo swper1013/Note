@@ -13,8 +13,7 @@
     <div class="content pt-5">
         <center><h3>회원가입</h3></center>
         <hr>
-        <form id="signupForm" name="signupForm" th:action="@{/signpage}" method="post" th:object="${usersDTO}"
-              onsubmit="return combineAddr()">
+        <form id="signupForm" name="signupForm" th:action="@{/signpage}" method="post" th:object="${usersDTO}">
 
             <table cellpadding="5" cellspacing="0" align="center">
 
@@ -95,6 +94,15 @@
                 </div>
             </div>
         </form>
+        <script>
+            function test(){
+                document.getElementById("userid").value = "swper"
+                document.getElementById("password").value = "1111"
+                document.getElementById("password2").value = "1111"
+                document.getElementById("name").value = "안준섭"
+                document.getElementById("email").value = "abc1013@naver.com"
+            }
+        </script>
     </div>
 </div>
 </body>

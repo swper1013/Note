@@ -9,6 +9,7 @@ import java.time.LocalDate;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -35,6 +36,7 @@ public class UsersEntity {
     private String email;
 
     //private String imgUrl;
-
+    @Column
+    private String permission;
     private LocalDate createdAt;
 }
