@@ -50,4 +50,9 @@ public class UserServiceImpl implements UserService {
     public UsersDTO updateUser(String userid, UsersDTO usersDTO) {
         return null;
     }
+
+    @Override
+    public UsersDTO getUser(String userid) {
+        return null;
+    }
 }
