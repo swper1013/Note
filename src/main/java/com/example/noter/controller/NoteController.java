@@ -34,7 +34,8 @@ public class NoteController {
         return "/hello";
     }
     @GetMapping ("/note")
-    public String notemain(){
+    public String notemain(Model model){
+        model.addAttribute("NoteDTO",new NoteDTO());
         return "main";
     }
     @GetMapping ("/forgotpass")
