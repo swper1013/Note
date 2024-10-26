@@ -49,11 +49,12 @@ public class NoteController {
     @PostMapping("/note/register")
     public String register(@ModelAttribute NoteDTO noteDTO, BindingResult bindingResult, Model model, Principal principal){
         UsersDTO usersDTO = userService.getUser(principal.getName());
+        model.addAttribute("NoteDTO", new NoteDTO());
         if (bindingResult.hasErrors()){
             log.info("에러에러에러"+bindingResult.getAllErrors());
-            return "note";
+            return "main";
         }
-    return "note";
+    return "main";
 
     }
 
